@@ -76,7 +76,7 @@ end
 
 -------------------------------------------------------------------------------
 
-function LibCompat.tLength(tbl)
+function LibCompat.tlength(tbl)
 	local len = 0
 	for _ in pairs(tbl) do
 		len = len + 1
@@ -85,7 +85,7 @@ function LibCompat.tLength(tbl)
 end
 
 -- copies a table from another
-function LibCompat.tCopy(to, from, ...)
+function LibCompat.tcopy(to, from, ...)
 	for k, v in pairs(from) do
 		local skip = false
 		if ... then
@@ -99,17 +99,11 @@ function LibCompat.tCopy(to, from, ...)
 		if not skip then
 			if type(v) == "table" then
 				to[k] = {}
-				LibCompat.tCopy(to[k], v, ...)
+				LibCompat.tcopy(to[k], v, ...)
 			else
 				to[k] = v
 			end
 		end
-	end
-end
-
-function LibCompat.tAppendAll(tbl, elems)
-	for _, elem in ipairs(elems) do
-		tinsert(tbl, elem)
 	end
 end
 
@@ -535,9 +529,8 @@ local mixins = {
 	"Print",
 	"Printf",
 	"QuickDispatch",
-	"tLength",
-	"tCopy",
-	"tAppendAll",
+	"tlength",
+	"tcopy",
 	"Clamp",
 	"IsInRaid",
 	"IsInParty",

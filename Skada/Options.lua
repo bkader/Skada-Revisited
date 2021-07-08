@@ -91,7 +91,7 @@ Skada.windowdefaults = {
 }
 
 local windefaultscopy = {}
-Skada.tCopy(windefaultscopy, Skada.windowdefaults)
+Skada.tcopy(windefaultscopy, Skada.windowdefaults)
 
 Skada.defaults = {
 	profile = {

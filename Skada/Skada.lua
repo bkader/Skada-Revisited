@@ -393,7 +393,7 @@ do
 						if copywindow then
 							for _, win in Skada:IterateWindows() do
 								if win.db.name == copywindow and win.db.display == db.display then
-									Skada.tCopy(newdb, win.db, {"name", "sticked", "x", "y", "point", "snapped"})
+									Skada.tcopy(newdb, win.db, {"name", "sticked", "x", "y", "point", "snapped"})
 									break
 								end
 							end
@@ -800,7 +800,7 @@ function Skada:CreateWindow(name, db, display)
 	local isnew = false
 	if not db then
 		db, isnew = {}, true
-		self.tCopy(db, Skada.windowdefaults)
+		self.tcopy(db, Skada.windowdefaults)
 		tinsert(self.db.profile.windows, db)
 	end
 
