@@ -75,19 +75,19 @@ Skada:AddLoadableModule("Absorbs", function(Skada, L)
 		[3747] = {dur = 30}, -- Power Word: Shield (rank 4)
 		[6065] = {dur = 30}, -- Power Word: Shield (rank 5)
 		[6066] = {dur = 30}, -- Power Word: Shield (rank 6)
-		[10898] = {dur = 30}, -- Power Word: Shield (rank 7)
-		[10899] = {dur = 30}, -- Power Word: Shield (rank 8)
-		[10900] = {dur = 30}, -- Power Word: Shield (rank 9)
-		[10901] = {dur = 30}, -- Power Word: Shield (rank 10)
-		[25217] = {dur = 30}, -- Power Word: Shield (rank 11)
-		[25218] = {dur = 30}, -- Power Word: Shield (rank 12)
-		[48065] = {dur = 30}, -- Power Word: Shield (rank 13)
-		[48066] = {dur = 30, avg = 10000, cap = 11000}, -- Power Word: Shield (rank 14)
+		[10898] = {dur = 30, cap = 848}, -- Power Word: Shield (rank 7)
+		[10899] = {dur = 30, cap = 1050}, -- Power Word: Shield (rank 8)
+		[10900] = {dur = 30, cap = 1800}, -- Power Word: Shield (rank 9)
+		[10901] = {dur = 30, cap = 4170}, -- Power Word: Shield (rank 10)
+		[25217] = {dur = 30, cap = 6200}, -- Power Word: Shield (rank 11)
+		[25218] = {dur = 30, cap = 8160}, -- Power Word: Shield (rank 12)
+		[48065] = {dur = 30, cap = 10900}, -- Power Word: Shield (rank 13)
+		[48066] = {dur = 30, avg = 10000, cap = 11400}, -- Power Word: Shield (rank 14)
 		[47509] = {dur = 12}, -- Divine Aegis (rank 1)
 		[47511] = {dur = 12}, -- Divine Aegis (rank 2)
 		[47515] = {dur = 12}, -- Divine Aegis (rank 3)
-		[47753] = {dur = 12}, -- Divine Aegis (rank 1)
-		[54704] = {dur = 12}, -- Divine Aegis (rank 1)
+		[47753] = {dur = 12, cap = 10000}, -- Divine Aegis (rank 1)
+		[54704] = {dur = 12, cap = 10000}, -- Divine Aegis (rank 1)
 		[47788] = {dur = 10}, -- Guardian Spirit
 		[7812] = {dur = 30}, -- Sacrifice (rank 1)
 		[19438] = {dur = 30}, -- Sacrifice (rank 2)
@@ -162,7 +162,7 @@ Skada:AddLoadableModule("Absorbs", function(Skada, L)
 		[27539] = {dur = 6, avg = 300, cap = 500}, -- Thick Obsidian Breatplate
 		[28810] = {dur = 30, cap = 500}, -- Faith Set Proc Armor of Faith
 		[55019] = {dur = 12, cap = 1100}, -- Sonic Shield
-		[64413] = {dur = 8}, -- Val'anyr, Hammer of Ancient Kings Protection of Ancient Kings
+		[64413] = {dur = 8, cap = 20000}, -- Val'anyr, Hammer of Ancient Kings Protection of Ancient Kings
 		[40322] = {dur = 30, avg = 12000, cap = 12600}, -- Teron's Vengeful Spirit Ghost - Spirit Shield
 		[65874] = {dur = 15, cap = 175000}, -- Twin Val'kyr's: Shield of Darkness
 		[67257] = {dur = 15, cap = 300000}, -- Twin Val'kyr's: Shield of Darkness
